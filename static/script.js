@@ -23,7 +23,7 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
 document.querySelectorAll('.short-text').forEach(paragraph => {
     const fullText = paragraph.textContent;
     paragraph.setAttribute('data-full-text', fullText);
-    const shortText = fullText.slice(0, 30) + (fullText.length > 50 ? '...' : '');
+    const shortText = fullText.slice(0, 30) + (fullText.length > 30 ? '...' : '');
     paragraph.setAttribute('data-short-text', shortText);
     paragraph.textContent = shortText;
 });
