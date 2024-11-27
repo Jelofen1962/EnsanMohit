@@ -43,3 +43,25 @@
     <script src="./static/script.js"></script>
 </body>
 </html>
+
+<script>
+    // Function to append cache-busting query string to resources
+    function cacheBuster() {
+        const timestamp = new Date().getTime();
+        
+        // Append cache-buster to CSS and JS files
+        const stylesheets = document.querySelectorAll('link[rel="stylesheet"]');
+        const scripts = document.querySelectorAll('script[src]');
+        
+        stylesheets.forEach(link => {
+            link.href = link.href.split('?')[0] + '?v=' + timestamp; // Remove existing query params
+        });
+        
+        scripts.forEach(script => {
+            script.src = script.src.split('?')[0] + '?v=' + timestamp; // Remove existing query params
+        });
+    }
+
+    // Run the cache-buster function on window load
+    window.onload = cacheBuster;
+</script>
