@@ -3,6 +3,11 @@
     src: url(./IRANSansXRegular.ttf);
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+
 body, html {
     direction: rtl;
     height: 100%;
