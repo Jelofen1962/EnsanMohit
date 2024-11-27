@@ -1,0 +1,125 @@
+@font-face {
+    font-family: ir;
+    src: url(./IRANSansXRegular.ttf);
+}
+
+body, html {
+    direction: rtl;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: ir;
+    background-color: #588157;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #3A5A40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.desp {
+    color: #ffffff;
+    margin: 0.5rem;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #344E41;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-circle img {
+    width: 50px;
+    height: 50px;
+}
+
+.download-btn, .read-more-btn {
+    font-family: ir;
+    background-color: #344E41;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.download-btn:hover, .read-more-btn:hover {
+    background-color: #20382c;
+}
+
+.short-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.hitler, .como {
+    position: fixed;
+    z-index: 0;
+    opacity: 50%;
+    margin: 1rem;
+    transform: translateY(-8rem);
+}
+
+.hitler {
+    right: 0;
+}
+
+.como {
+    left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .download-section {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-circle img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .download-btn, .read-more-btn {
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #588157;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: ir;
+    src: url(./IRANSansXRegular.ttf);
+}
+
+.sec {
+    font-family: ir;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+h1{
+    font-size: 1.7em;
+}
+
+h2{
+    color: #e4e4e4;
+    font-size: 1.1em;
+}
