@@ -3,7 +3,7 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
         const paragraph = this.previousElementSibling;
         if (paragraph.style.whiteSpace === 'normal') {
             // Hide text back
-            paragraph.style.maxWidth = '300px';
+            paragraph.style.maxWidth = '250px';
             paragraph.style.whiteSpace = 'nowrap';
             paragraph.style.textOverflow = 'ellipsis';
             paragraph.textContent = paragraph.getAttribute('data-short-text');
